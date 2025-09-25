@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K. Ham — Lab Toys & XRD Tools</title>
+  <meta name="description" content="Tool Opener React/Flutter" />
+
+  <!-- OGP / SNS -->
+  <meta property="og:title" content="Lab Toys & XRD Tools" />
+  <meta property="og:description" content="Scientific games" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/assets/icon_lime.png" />
+  <link rel="preload" href="/assets/icon_red.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">KI</a>
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn ghost" href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Science games & <span class="accent">XRD</span> tools</h1>
+        <p>Everyone can be researcher.</p>
+        <div class="cta">
+          <a class="btn primary" href="#products">See products</a>
+          <a class="btn" href="#about">About me</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="/assets/icon_lime.png" alt="Crystal and diffraction" />
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Products</h2>
+      <div class="grid">
+        <!-- 1) XRD解析ツール -->
+        <article class="card">
+          <div class="card-badge">Web Tool</div>
+          <h3>XRD Pattern Analyzer</h3>
+          <p>Peak detection</p>
+          <ul class="meta">
+            <li>CSV/XY files</li><li>CuKalpha lambda</li><li>Demo</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="/xrd/">Open</a>
+            <a class="btn ghost" href="https://github.com/yourname/xrd-tool" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </article>
+
+        <!-- 2) 行列×数独（Detoku） -->
+        <article class="card">
+          <div class="card-badge">Puzzle</div>
+          <h3>Detoku</h3>
+          <p>Real matrix</p>
+          <ul class="meta"><li>4*4 / 6*6 / 9*9</li><li>Daily</li></ul>
+          <div class="actions">
+            <a class="btn primary" href="/detoku/">Play</a>
+            <a class="btn ghost" href="https://github.com/yourname/detoku" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </article>
+
+        <!-- 3) Quantum -->
+        <article class="card">
+          <div class="card-badge">Mini Game</div>
+          <h3>Q-Circuits Lite</h3>
+          <p>H/CNOT/S</p>
+          <ul class="meta"><li>Browsing</li><li>Short-Shot</li></ul>
+          <div class="actions">
+            <a class="btn primary" href="/q-lite/">Play</a>
+            <a class="btn ghost" href="https://github.com/yourname/q-lite" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Good product</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Let's contact</p>
+      <ul class="links">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="y"></span> K. Ham. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
