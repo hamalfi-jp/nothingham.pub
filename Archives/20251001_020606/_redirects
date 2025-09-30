@@ -1,0 +1,6 @@
+# 旧URLから新URLへ（恒久）
+/old-xrd      /xrd      301
+/blog/*       /notes/:splat 301
+
+# SPA fallback（全体を1つのクライアントルータで動かす場合）
+/*            /index.html  200
